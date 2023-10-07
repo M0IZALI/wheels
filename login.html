@@ -1,39 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
-<body>
-    
-    <main class="mt-24">
-				<div class='flex flex-col items-center'>
-					<form action="/api/create-account" method="post" class="w-full max-w-md">
-						<div class="mb-6">
-							<label for="name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
-							<input type="text" name="name" id="name"
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[100%] p-2.5" />
-						</div>
-						<div class="mb-6">
-							<label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
-							<input type="email" name="email" id="email"
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
-						</div>
-						<div class="mb-6">
-							<label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
-							<input type="password" name="password" id="password"
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
-						</div>
-			
-						<button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
-					</form>
-					<p class="mt-10 text-center">Don't have an account? 
-						<a href="signup.html" class="text-orange-400">Signup</a>
-					</p>
-				</div>
-    </main>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#fff] w-[100%] h-[89px]">
+        <ul>
+          <li>
+            <img
+              src="img/Wheels-logo-black.png"
+              alt="Wheels logo"
+              class="-mt-2 w-24 h-24 object-contain float-left"
+            />
+          </li>
+        </ul>
+        <ul class="p-7 flex justify-end gap-5">
+          <li
+            class="btn font-mono hover:cursor-pointer duration-500 transition-all hover:text-[#e7cf65]"
+          >
+            <a href="index.html">HOME</a>
+          </li>
+          <li
+            class="btn font-mono hover:cursor-pointer duration-500 transition-all hover:text-[#e7cf65]"
+          >
+            <a href="signup.html">SIGNUP</a>
+          </li>
+          <li
+            class="btn font-mono hover:cursor-pointer duration-500 transition-all hover:text-[#e7cf65]"
+          >
+            SERVICES
+          </li>
+          <li
+            class="btn font-mono hover:cursor-pointer duration-500 transition-all hover:text-[#e7cf65]"
+          >
+            LOCATIONS
+          </li>
+          <li
+            class="btn font-mono hover:cursor-pointer duration-500 transition-all hover:text-[#e7cf65]"
+          >
+            CARS AVAILABLE
+          </li>
+        </ul>
+        <hr class="-mt- border-[#f9e180] border-4 w-[100%]" />
+      </nav>
+    </header>
 
-</body>
+    <main class="mt-24">
+      <div class="flex flex-col items-center">
+        <form
+          action="/api/create-account"
+          method="post"
+          class="w-full max-w-md"
+        >
+          <div class="mb-6">
+            <label
+              for="name"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[100%] p-2.5"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-900"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Login
+          </button>
+        </form>
+        <p class="mt-10 text-center">
+          Don't have an account?
+          <a href="signup.html" class="text-orange-400">Signup</a>
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
